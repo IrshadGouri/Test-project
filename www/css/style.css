@@ -1,0 +1,14 @@
+.background-color{
+    background: #387ef5 !important;
+    color: #FFF !important;
+}
+h2{
+	font-size: 18px !important;
+	font-weight: 400 !important;
+	text-align: center !important;
+	color: #FFF !important;
+}
+.no-margin{
+	margin: 0px !important;
+}
+

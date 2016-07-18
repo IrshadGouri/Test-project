@@ -1,0 +1,23 @@
+<ion-view>
+	<ion-header-bar class=" bar-positive">
+		<div class="title">Test</div>
+	</ion-header-bar>
+	<ion-content>
+		<div class="row list background-color no-margin">
+		  <div class="col button background-color" ng-repeat="category in categories" ng-click="currentCategory = category.top; setSubCategories(category.left)">
+		   <h2>{{category.top}}</h2>
+		  </div>
+		</div>
+		<div class="row list background-color no-margin">
+		  <div class="col  button background-color" ng-repeat="subCategory in subCategories" ng-click="getContent(currentCategory,subCategory)">
+		   <h2>{{subCategory}}</h2>
+		  </div>
+		</div>
+		<div class="list no-margin">
+		  <div class="item item-text-wrap">
+		   <h3 class="text-center">{{ content }}</h3>
+		  </div>
+		</div>
+
+	</ion-content>
+</ion-view>
